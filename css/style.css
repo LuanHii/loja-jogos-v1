@@ -1,0 +1,155 @@
+@charset "UTF-8";
+
+
+@font-face {
+    font-family: 'Gamer';
+    src: url(../fontes/Gamer.ttf);
+    font-weight: normal;
+}
+
+:root {
+    --cor0: #04047A;
+    --cor1: #5252F9;
+    --cor2: #0707F7;
+    --cor3: #282878;
+    --cor4: #0606C7;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: linear-gradient(to bottom, darkblue, rgb(1, 1, 85));
+}
+
+
+header {
+    background-image: linear-gradient(to top, var(--cor0), var(--cor4));
+    font-family: Gamer;
+    font-size: 60px;
+    text-align: center;
+    padding-top: 10px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.651);
+
+}
+
+header>h1 {
+    color: rgb(241, 241, 252);
+    text-shadow: 1px 1px 5px black;
+}
+
+header>p {
+    padding-top: 5px;
+    color: rgb(225, 223, 235);
+    text-shadow: 1px 1px 5px black;
+}
+
+nav {
+    background-color: var(--cor0);
+    font-family: Gamer;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 20px;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.322);
+    font-size: 30px;
+    text-shadow: 1px 1px 5px black;
+
+}
+
+nav>a {
+    color: rgb(185, 183, 183);
+    text-decoration: none;
+    transition-duration: 0.5s;
+    padding-right: 15px;
+    padding-left: 5px;
+
+    border-radius: 5px;
+    text-align: center;
+    text-shadow: 1px 1px 5px black;
+}
+
+nav>a:hover {
+
+    background-color: var(--cor4);
+    color: white;
+
+}
+
+main {
+    margin: auto;
+    min-width: 300px;
+    max-width: 1000px;
+    background-color: var(--cor4);
+    margin-bottom: 30px;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.651);
+}
+
+main>h2 {
+    color: rgb(252, 246, 246);
+    text-align: center;
+    font-size: 30px;
+    background-color: blue;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.651);
+    text-shadow: 1px 1px 5px black;
+    border-radius: 0px 0px 10px 10px;
+    font-family: Gamer;
+    font-size: 50px;
+
+}
+
+
+
+.column {
+    float: left;
+    width: 25%;
+    text-align: center;
+    margin-left: 60px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 5px;
+
+    border-radius: 10px;
+
+
+}
+
+.column>a {
+    font-family: Arial, Helvetica, sans-serif;
+    display: block;
+    text-decoration: none;
+    color: white;
+
+}
+
+.column>a:hover {
+    text-decoration: underline;
+}
+
+img {
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.322);
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+
+
+}
+
+img {
+    width: 100px;
+    height: 133px;
+
+}
+
+footer {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-align: center;
+    background-color: black;
+}
